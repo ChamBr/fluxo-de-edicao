@@ -19,6 +19,7 @@ Você não edita vídeo nesta skill. Você conversa, decide junto e escreve as s
 | Arquivo | Quando |
 |---|---|
 | `guias/principios-do-fluxo.md` | Fase 0, sempre: os bons costumes que valem para qualquer fluxo |
+| `guias/ambiente-local.md` | Fase 1, sempre, e em toda skill que roda Python, modelos ou FFmpeg: o que já está instalado e as regras para não quebrar |
 | `guias/decisoes.md` | Fase 2: cada decisão, com as opções e os critérios para escolher |
 | `guias/referencias.md` | Fase 3: como analisar referências e criar o perfil |
 | `guias/etapa-*.md` | Fase 5: o ofício de cada etapa, lido quando for escrever aquela skill |
@@ -43,6 +44,8 @@ Leia `guias/principios-do-fluxo.md`. Em poucas linhas, diga à pessoa:
 ## Fase 1. Ambiente
 Confira, sem instalar nada ainda: sistema operacional, Python, FFmpeg, Node.js (o HyperFrames roda por `npx`), Git e a placa de vídeo (uma GPU NVIDIA acelera muito a transcrição local; sem ela, funciona mais devagar, ou com transcrição na nuvem).
 Mostre o que existe e o que falta. Instale só depois das decisões da fase 2 (só o que o fluxo dela vai usar), explicando cada instalação.
+
+**Neste computador o ambiente já está montado.** Leia `guias/ambiente-local.md` e confira a lista de lá (incluindo `torch.cuda.is_available()`). Reaproveite o Python do sistema; não crie ambiente novo nem reinstale PyTorch ou OpenCV. Leve as regras desse guia para as regras comuns da pessoa (fase 5).
 
 ## Fase 2. Entrevista
 Leia `guias/decisoes.md` e siga a ordem de lá. A primeira decisão é sempre **onde a pessoa revisa o vídeo** (num programa de edição ou só assistindo ao vídeo pronto), porque ela muda o fluxo inteiro. Para cada decisão: explique as opções em 2–3 linhas, dê a sua sugestão para o caso dela e registre a escolha no `montagem.md`.

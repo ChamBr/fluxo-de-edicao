@@ -9,7 +9,12 @@ Vira o arquivo `regras-comuns.md`, dentro da pasta da skill mestra. Todas as ski
 
 Lidas uma vez por sessão por todas as skills de edição. Mudou uma regra geral? Mude aqui, não em cada skill.
 
-Ferramentas: `<pasta de ferramentas>` (scripts em `scripts/`, Python do ambiente em `<caminho do python>`).
+Ferramentas: `<pasta de ferramentas>` (scripts em `scripts/`, Python do sistema em `<caminho do python>`, com PyTorch CUDA).
+
+## 0. Ambiente (resumo de `ambiente-local.md` da skill fluxo-de-edicao)
+- Antes de rodar modelo: `torch.cuda.is_available()` tem de ser `True`; se não, parar e avisar.
+- Não criar ambiente novo, não reinstalar PyTorch nem OpenCV; pacote que pede outro OpenCV vai com `--no-deps`.
+- Render no FFmpeg com NVENC (`h264_nvenc`, `hevc_nvenc`, `av1_nvenc`).
 Perfil: `<pasta de ferramentas>/perfis/<nome>/`. O nome do perfil vem do estado do vídeo.
 
 ## 1. Conversa e segurança

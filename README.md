@@ -15,14 +15,16 @@ O ponto de partida é um fluxo de 8 etapas que eu uso nos meus vídeos, com os b
 Abra o Claude Code e cole:
 
 ```
-Instala esta skill para mim: https://github.com/LeiteZ/fluxo-de-edicao
+Instala esta skill para mim: https://github.com/ChamBr/fluxo-de-edicao
 ```
 
 Ou, pelo terminal:
 
 ```bash
-git clone https://github.com/LeiteZ/fluxo-de-edicao ~/.claude/skills/fluxo-de-edicao
+git clone https://github.com/ChamBr/fluxo-de-edicao ~/.claude/skills/fluxo-de-edicao
 ```
+
+> **Sobre este fork:** cópia de [LeiteZ/fluxo-de-edicao](https://github.com/LeiteZ/fluxo-de-edicao), ajustada para uma máquina que já tem o ambiente montado (PyTorch com CUDA, WhisperX, modelos de visão e áudio, FFmpeg com NVENC). As regras estão em `guias/ambiente-local.md`: a skill reaproveita o que existe em vez de criar um ambiente novo. Para trazer novidades do original: `git fetch upstream && git merge upstream/main`.
 
 ## Como usar
 No Claude Code, digite:
@@ -55,7 +57,7 @@ Esqueceu o nome? Digite `/` para ver a lista de skills, ou pergunte ao Claude qu
 | Pasta | O que tem |
 |---|---|
 | `SKILL.md` | O roteiro da conversa |
-| `guias/` | O conhecimento: princípios do fluxo, decisões, análise de referências, ofício de animação, HyperFrames, entrega no programa de edição e o ofício de cada etapa |
+| `guias/` | O conhecimento: princípios do fluxo, decisões, análise de referências, ofício de animação, HyperFrames, entrega no programa de edição, o ofício de cada etapa e o ambiente local (`ambiente-local.md`) |
 | `modelos/` | Os esqueletos das skills, do perfil e do estado do vídeo |
 
 Tudo em texto. Leia, mude, adapte.

@@ -15,7 +15,7 @@ Siga esta ordem. Para cada decisão: explique as opções em poucas linhas, dê 
 
 ## 3. Pasta e organização
 - Como a pessoa organiza um projeto hoje. Se não tiver um padrão, sugira um simples: `AAAA-MM-DD_Nome/` com `Brutos/`, `Assets/`, `Docs/` (roteiro), `Renders/`, e a pasta de trabalho do Claude (`_CLAUDE/`).
-- Pasta de ferramentas, compartilhada entre os vídeos (ex.: `~/.edicao/`): scripts, ambiente Python, perfil, biblioteca de sons, `montagem.md`.
+- Pasta de ferramentas, compartilhada entre os vídeos (ex.: `~/.edicao/`): scripts, perfil, biblioteca de sons, `montagem.md`. O Python é o do sistema (ver `ambiente-local.md`), não um ambiente dentro dela.
 - Proxies: se o programa dela usa, onde ficam.
 
 ## 4. Transcrição (a base de tudo)
